@@ -25,6 +25,10 @@ class Post(models.Model):
     def liked_count(self):
         return self.liked.all().count()
 
+    class Meta:
+        # ordering - newest first
+        ordering = ('-created',)
+
     # returns if user liked post
     def get_user_liked(self, user):
         pass

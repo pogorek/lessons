@@ -2,6 +2,17 @@ const postsBox = document.getElementById("posts-box");
 const spinnerBox = document.getElementById("spinner-box");
 const loadBtn = document.getElementById("load-btn");
 const endBox = document.getElementById("end-box");
+const alertBox = document.getElementById("alert-box");
+
+// var for url - detail page
+const url = window.location.href;
+
+// new post form
+const postForm = document.getElementById("post-form");
+const title = document.getElementById("id_title");
+const body = document.getElementById("id_body");
+const csrf = document.getElementsByName("csrfmiddlewaretoken");
+console.log("csrf: ", csrf[0].value);
 
 // function from django csrf documentation
 const getCookie = (name) => {
@@ -21,6 +32,14 @@ const getCookie = (name) => {
 };
 const csrftoken = getCookie("csrftoken");
 
+// func show message if post was deleted and there is value in local storage
+const deleted = localStorage.getItem("title");
+if (deleted) {
+	handleAlerts("danger", `Post "${deleted}" has been deleted`);
+	localStorage.clear();
+}
+
+// function to like button - like/unlike
 const likeUnlikePosts = () => {
 	// transform elements to array with spread operator
 	const likeUnlikeForms = [...document.getElementsByClassName("like-unlike-forms")];
@@ -56,6 +75,7 @@ const likeUnlikePosts = () => {
 // var for posts loaded
 let visible = 3;
 
+// Function to get data about posts and show it in div
 const getData = () => {
 	$.ajax({
 		type: "GET",
@@ -80,7 +100,7 @@ const getData = () => {
 		<div class="card-footer">
 			<div class="row">
 				<div class="col-2">
-					<a href="#" class="btn btn-primary">Details</a>
+					<a href="${url}${el.id}" class="btn btn-primary">Details</a>
 				</div>
 				<div class="col-2">
 					<form class="like-unlike-forms" data-form-id="${el.id}">
@@ -109,11 +129,71 @@ const getData = () => {
 	});
 };
 
+// listener to show posts
 loadBtn.addEventListener("click", () => {
 	spinnerBox.classList.remove("not-visible");
 	visible += 3;
 
 	getData();
+});
+
+// listener for new post form
+postForm.addEventListener("submit", (e) => {
+	// prevent submitting , prevent reload the page
+	e.preventDefault();
+
+	$.ajax({
+		type: "POST",
+		url: "",
+		data: {
+			csrfmiddlewaretoken: csrf[0].value,
+			title: title.value,
+			body: body.value,
+		},
+		success: function (response) {
+			console.log(response);
+			// insertAdjacentHTML() method inserts a text as HTML, into a specified position.
+			//
+			postsBox.insertAdjacentHTML(
+				"afterbegin",
+				`
+	<div class="card mb-2">
+		<div class="card-body">
+			<h5 class="card-title">${response.title}</h5>
+			<p class="card-text">${response.body}</p>
+		</div>
+		<div class="card-footer">
+			<div class="row">
+				<div class="col-2">
+					<a href="#" class="btn btn-primary">Details</a>
+				</div>
+				<div class="col-2">
+					<form class="like-unlike-forms" data-form-id="${response.id}">
+						<button href="#" class="btn btn-primary" id="like-unlike-${response.id}">Like (0)</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+			`
+			);
+			// add function so we can like new post without reloading page
+			likeUnlikePosts();
+			// hide modal after submitting new post
+			$("#addPostModal").modal("hide");
+			// display message in alertBox
+			handleAlerts("success", "New post added!");
+			// reset form after adding to remove values from form if er open it again
+			postForm.reset();
+		},
+		error: function (error) {
+			console.log(error);
+			// hide modal after submitting new post
+			$("#addPostModal").modal("hide");
+			// display message in alertBox
+			handleAlerts("danger", "ups... something went wrong");
+		},
+	});
 });
 
 getData();
