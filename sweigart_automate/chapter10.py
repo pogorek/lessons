@@ -110,6 +110,6 @@ p = Path.cwd()
 
 # Creating and Adding to ZIP Files
 # import zipfile
-newZip = zipfile.ZipFile('new.zip', 'a')
-newZip.write('hello.txt', compress_type=zipfile.ZIP_DEFLATED)
-newZip.close()
+# newZip = zipfile.ZipFile('new.zip', 'a')
+# newZip.write('hello.txt', compress_type=zipfile.ZIP_DEFLATED)
+# newZip.close()
