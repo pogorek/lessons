@@ -72,26 +72,36 @@
 # logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s -  %(levelname)s -  %(message)s')
 
 
-import logging
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s -  %(levelname)s-  %(message)s')
+# import logging
+# logging.basicConfig(level=logging.DEBUG,
+#                     format='%(asctime)s -  %(levelname)s-  %(message)s')
 
-logging.debug('Start of program')
+# logger = logging.getLogger()
 
+# logger.setLevel(logging.WARNING)
 
-def factorial(n):
-    logging.debug('Start of factorial(%s%%)' % (n))
-    total = 1
-    # for i in range(n + 1):
-    for i in range(1, n + 1):
-        total *= i
-        logging.debug(f'i is {i}, total is {total}')
-        # logging.debug('i is ' + str(i) + ', total is ' + str(total))
-    logging.debug('End of factorial(%s%%)' % (n))
-    return total
+# # logging.disable(logging.WARNING)
+
+# logger.debug("Harmless debug Message")
+# logger.info("Just an information")
+# logger.warning("Its a Warning")
+# logger.error("Did you try to divide by zero")
+# logger.critical("Internet is down")
 
 
-print(factorial(5))
+# def factorial(n):
+#     logging.debug('Start of factorial(%s%%)' % (n))
+#     total = 1
+#     # for i in range(n + 1):
+#     for i in range(1, n + 1):
+#         total *= i
+#         logging.debug(f'i is {i}, total is {total}')
+#         # logging.debug('i is ' + str(i) + ', total is ' + str(total))
+#     logging.debug('End of factorial(%s%%)' % (n))
+#     return total
+
+
+# print(factorial(5))
 # logging.debug('End of program')
 
 # Logging Levels
@@ -104,3 +114,37 @@ print(factorial(5))
 # logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(asctime)s -  %(levelname)s -  %(message)s')
 
 # Mu’s Debugger
+
+# print('Enter the first number to add:')
+# first = input()
+# print('Enter the second number to add:')
+# second = input()
+# print('Enter the third number to add:')
+# third = input()
+# print('The sum is ' + first + second + third)
+
+# import random
+# heads = 0
+# for i in range(1, 1001):
+#     if random.randint(0, 1) == 1:
+#         heads = heads + 1
+#     if i == 500:
+#         print('Halfway done!')
+# print('Heads came up ' + str(heads) + ' times.')
+
+# import random
+# guess = ''
+# while guess not in ('heads', 'tails'):
+#     print('Guess the coin toss! Enter heads or tails:')
+#     guess = input()
+# toss = random.choice(('heads', 'tails'))  # 0 is tails, 1 is heads
+# if toss == guess:
+#     print('You got it!')
+# else:
+#     print('Nope! Guess again!')
+#     guess = input()
+#     toss = random.choice(('heads', 'tails'))
+#     if toss == guess:
+#         print('You got it!')
+#     else:
+#         print('Nope. You are really bad at this game.')
