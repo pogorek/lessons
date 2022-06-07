@@ -110,3 +110,9 @@ print('str(pElems): ', str(pElems))
 # # True
 # spanElem.attrs
 # # {'id': 'author'}
+
+#! Project: Opening All Search Results
+# searchpypi.py
+
+#! Project: Downloading All XKCD Comics
+# downloadXkcd.py
