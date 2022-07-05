@@ -6,8 +6,9 @@
 # wb = openpyxl.load_workbook('example.xlsx')
 # print(type(wb))
 # # <class 'openpyxl.workbook.workbook.Workbook'>
-
-# Getting Sheets from the Workbook
+# print(wb)
+# # <openpyxl.workbook.workbook.Workbook object at 0x7fb792b3ab20>
+# # Getting Sheets from the Workbook
 
 # import openpyxl
 # wb = openpyxl.load_workbook('example.xlsx')

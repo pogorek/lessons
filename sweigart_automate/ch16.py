@@ -24,6 +24,9 @@
 # for row in exampleReader:
 #     print('Row #' + str(exampleReader.line_num) + ' ' + str(row))
 
+# for row in exampleReader:
+#     print('Row #' + str(exampleReader.line_num) + ' ' + str(row))
+
 # Row #1 ['4/5/2015 13:34', 'Apples', '73']
 # Row #2 ['4/5/2015 3:41', 'Cherries', '85'] ...
 
@@ -94,11 +97,11 @@
 
 ## Writing JSON with the dumps() Function
 
-pythonValue = {'isCat': True, 'miceCaught': 0, 'name': 'Zophie', 'felineIQ': None}
-import json
-stringOfJsonData = json.dumps(pythonValue)
-print(stringOfJsonData)
-# '{"isCat": true, "felineIQ": null, "miceCaught": 0, "name": "Zophie" }'
+# pythonValue = {'isCat': True, 'miceCaught': 0, 'name': 'Zophie', 'felineIQ': None}
+# import json
+# stringOfJsonData = json.dumps(pythonValue)
+# print(stringOfJsonData)
+# # '{"isCat": true, "felineIQ": null, "miceCaught": 0, "name": "Zophie" }'
 
 #! Project: Fetching Current Weather Data
 
