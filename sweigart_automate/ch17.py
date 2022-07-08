@@ -1,8 +1,9 @@
 # 17 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS17 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS
-import datetime, time
+import datetime
+import time
 
 #! The time Module
-## The time.time() Function
+# The time.time() Function
 
 # import time
 # time.time()
@@ -34,7 +35,7 @@ import datetime, time
 # print(time.ctime(thisMoment))
 # # 'Mon Jun 15 14:00:45 2020'
 
-## The time.sleep() Function
+# The time.sleep() Function
 
 # import time
 # for i in range(3):
@@ -43,7 +44,7 @@ import datetime, time
 #     print('Tock')
 #     time.sleep(1)
 
-## Rounding Numbers
+# Rounding Numbers
 
 # import time
 # now = time.time()
@@ -56,7 +57,7 @@ import datetime, time
 # print(round(now))
 # # 1543814037
 
-## Project: Super Stopwatch
+# Project: Super Stopwatch
 
 #! The datetime Module
 # import datetime
@@ -85,7 +86,7 @@ import datetime, time
 # print(newyears2020 > halloween2019) # True
 # print(newyears2020 != oct31_2019) # True
 
-## The timedelta Data Type
+# # The timedelta Data Type
 
 # delta = datetime.timedelta(days=11, hours=10, minutes=9, seconds=8)
 # print(delta.days, delta.seconds, delta.microseconds)
@@ -103,15 +104,78 @@ import datetime, time
 # print(dt + thousandDays)
 # # 2025-04-01 01:11:02.181184
 
-# timedelta objects can be added or subtracted with datetime objects or other timedelta objects using the + and - operators. 
-# A timedelta object can be multiplied or divided by integer or float values with the * and / operators
-oct21st = datetime.datetime(2019, 10, 21, 16, 29, 0)
-aboutThirtyYears = datetime.timedelta(days=365 * 30)
-print(oct21st)
-# 2019-10-21 16:29:00
-print(oct21st - aboutThirtyYears)
-# 1989-10-28 16:29:00
-print(oct21st - (2 * aboutThirtyYears))
-# 1959-11-05 16:29:00
+# oct21st = datetime.datetime(2019, 10, 21, 16, 29, 0)
+# aboutThirtyYears = datetime.timedelta(days=365 * 30)
+# print(oct21st)
+# # 2019-10-21 16:29:00
+# print(oct21st - aboutThirtyYears)
+# # 1989-10-28 16:29:00
+# print(oct21st - (2 * aboutThirtyYears))
+# # 1959-11-05 16:29:00
 
-## Pausing Until a Specific Date
+# ## Pausing Until a Specific Date
+
+# import datetime
+# import time
+# halloween2016 = datetime.datetime(2016, 10, 31, 0, 0, 0)
+# while datetime.datetime.now() < halloween2016:
+#     time.sleep(1)
+
+# Converting datetime Objects into Strings
+
+# oct21st = datetime.datetime(2019, 10, 21, 16, 29, 0)
+# print(oct21st.strftime('%Y/%m/%d %H:%M:%S'))
+# # '2019/10/21 16:29:00'
+# print(oct21st.strftime('%I:%M %p'))
+# # '04:29 PM'
+# print(oct21st.strftime("%B of '%y"))
+# # "October of '19"
+
+# Converting Strings into datetime Objects
+
+# print(datetime.datetime.strptime('October 21, 2019', '%B %d, %Y'))
+# # 2019-10-21 00:00:00
+# print(datetime.datetime.strptime('2019/10/21 16:29:00', '%Y/%m/%d %H:%M:%S'))
+# # 2019-10-21 16:29:00
+# print(datetime.datetime.strptime("October of '19", "%B of '%y"))
+# # 2019-10-01 00:00:00
+# print(datetime.datetime.strptime("November of '63", "%B of '%y"))
+# # 2063-11-01 00:00:00
+
+#! Multithreading
+
+import threading
+# import time
+# print('Start of program.')
+
+# def takeANap():
+#     time.sleep(5)
+#     print('Wake up!')
+
+# threadObj = threading.Thread(target=takeANap)
+# threadObj.start()
+
+# print('End of program.')
+
+# Passing Arguments to the Thread’s Target Function
+
+# threadObj = threading.Thread(
+#     target=print, args=['Cats', 'Dogs', 'Frogs'], kwargs={'sep': ' & '})
+# threadObj.start()
+# # Cats & Dogs & Frogs
+
+#! Project: Multithreaded XKCD Downloader
+
+#! Launching Other Programs from Python
+
+import subprocess
+# subprocess.Popen('C:\\Windows\\System32\\calc.exe')
+subprocess.Popen('/mnt/c/Windows/System32/calc.exe')
+
+paintProc = subprocess.Popen('/mnt/c/Windows/System32/mspaint.exe')
+print(paintProc.poll() == None)
+# True
+print(paintProc.wait())  # Doesn't return until MS Paint closes.
+# 0
+print(paintProc.poll())
+# 0
