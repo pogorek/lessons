@@ -169,13 +169,68 @@ import threading
 #! Launching Other Programs from Python
 
 import subprocess
-# subprocess.Popen('C:\\Windows\\System32\\calc.exe')
-subprocess.Popen('/mnt/c/Windows/System32/calc.exe')
+# # subprocess.Popen('C:\\Windows\\System32\\calc.exe')
+# print(subprocess.Popen('/mnt/c/Windows/System32/calc.exe'))
 
-paintProc = subprocess.Popen('/mnt/c/Windows/System32/mspaint.exe')
-print(paintProc.poll() == None)
-# True
-print(paintProc.wait())  # Doesn't return until MS Paint closes.
-# 0
-print(paintProc.poll())
-# 0
+# paintProc = subprocess.Popen('/mnt/c/Windows/System32/mspaint.exe')
+# print(paintProc.poll() == None)
+# # True
+# print(paintProc.wait())  # Doesn't return until MS Paint closes.
+# # 0
+# print(paintProc.poll())
+# # 0
+
+# Passing Command Line Arguments to the Popen() Function
+
+# subprocess.Popen(['/mnt/c/Windows/notepad.exe',
+#                  'D:\\PROGRAMOWANIE\\GIT\\school\\sweigart_automate\\hello.txt'])
+# subprocess.Popen(['/mnt/c/Windows/notepad.exe',
+#                  r'D:\PROGRAMOWANIE\GIT\school\sweigart_automate\hello.txt'])
+# subprocess.Popen(['/mnt/c/Program Files/Notepad++/notepad++.exe',
+#                  '/mnt/d/PROGRAMOWANIE/GIT/school/sweigart_automate/hello.txt'])
+
+# Task Scheduler, launchd, and cron
+
+# Opening Websites with Python
+
+# Running Other Python Scripts
+# subprocess.Popen(['/mnt/c/Users/Piotr/AppData/Local/Programs/Python/Python310/python.exe', 'hello.py']) # OK
+
+# subprocess.Popen(['python3', 'hello.py']) # OK
+
+# subprocess.run(["python3", "hello.py"]) # OK
+
+# subprocess.Popen(
+#     [r'C:\Users\Piotr\AppData\Local\Programs\Python\Python310\python.exe', 'hello.py']) # Don't work
+# subprocess.Popen(
+#     ['C:\Users\Piotr\AppData\Local\Programs\Python\Python310\python.exe', 'hello.py']) # Don't work
+# subprocess.Popen(
+#     ['C:\\Users\\Piotr\\AppData\\Local\\Programs\\Python\\Python310\\python.exe', 'hello.py']) # Don't work
+
+# Opening Files with Default Applications
+
+fileObj = open('hello.txt', 'w')
+fileObj.write('Hello, world YO!')
+# 12
+fileObj.close()
+filepath = '/mnt/d/PROGRAMOWANIE/GIT/school/sweigart_automate/hello.txt'
+# no - hello.txt: 1: cmd: not found
+# subprocess.Popen(['cmd /c start', 'hello.txt'], shell=True)
+# subprocess.Popen(['start', 'hello.txt'], shell=True) # no - hello.txt: 1: start: not found
+# subprocess.Popen(['xdg-open', 'hello.txt'], shell=True) # no - hello.txt: 1: xdg-open: not found
+# subprocess.Popen(['see', 'hello.txt']) # no - hello.txt: 1: see: not found
+
+# subprocess.call(('start', 'hello.txt'), shell=True) # no - hello.txt: 1: start: not found
+
+# subprocess.run(['open', filepath], check=True) # no - FileNotFoundError: [Errno 2] No such file or directory: 'open'
+# subprocess.run(['xdg-open', filepath], check=True) # no - FileNotFoundError: [Errno 2] No such file or directory: 'xdg-open'
+# subprocess.run(['xdg-open', 'hello.txt'], check=True) # no - FileNotFoundError: [Errno 2] No such file or directory: 'xdg-open'
+# subprocess.run(['see', filepath], check=True) # strange
+
+# subprocess.check_call(['open', filepath]) # no - FileNotFoundError: [Errno 2] No such file or directory: 'open'
+# subprocess.check_call(['xdg-open', filepath]) # no - FileNotFoundError: [Errno 2] No such file or directory: 'xdg-open'
+# subprocess.check_call(['start', filepath]) # no - FileNotFoundError: [Errno 2] No such file or directory: 'start'
+
+# subprocess.check_call(['see', filepath]) # strange
+
+#! Project: Simple Countdown Program

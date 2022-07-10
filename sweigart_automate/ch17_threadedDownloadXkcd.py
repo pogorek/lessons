@@ -7,8 +7,6 @@ import bs4
 import threading
 import time
 
-startTime = time.time()
-
 os.makedirs('xkcd2', exist_ok=True)    # store comics in ./xkcd
 
 
@@ -56,6 +54,3 @@ for i in range(0, 140, 10):    # loops 14 times, creates 14 threads
 for downloadThread in downloadThreads:
     downloadThread.join()
 print('Done.')
-
-endTime = time.time()
-print('Took %s seconds to finish.' % (endTime - startTime))
