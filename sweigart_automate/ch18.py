@@ -7,12 +7,16 @@
 # os.chdir(r'/mnt/d/PROGRAMOWANIE/GIT/school/sweigart_automate')
 # ezgmail.init()
 
-# import os
+import os
 
-# EMAIL_USER = os.environ.get('EMAIL_USER_BOT')
-# EMAIL_PASS = os.environ.get('EMAIL_PASS_BOT')
-# print('EMAIL_USER: ', EMAIL_USER)
-# print('EMAIL_PASS: ', EMAIL_PASS)
+import smtplib
+EMAIL_USER = os.environ.get('EMAIL_USER_BOT')
+EMAIL_PASS = os.environ.get('EMAIL_PASS_BOT')
+print('EMAIL_USER: ', EMAIL_USER)
+print('EMAIL_PASS: ', EMAIL_PASS)
+
+EMAIL_USER:  pt.ogorek.bot@gmail.com
+EMAIL_PASS:  goexkonkkzqbmmlz
 
 #! SMTP
 
@@ -34,7 +38,6 @@
 # (221, b'2.0.0 closing connection ko10sm23097611pbd.52 - gsmtp')
 
 # Connecting to an SMTP Server
-import smtplib
 
 smtpObj = smtplib.SMTP('smtp.gmail.com', 587)
 print(type(smtpObj))
