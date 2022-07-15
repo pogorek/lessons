@@ -19,8 +19,6 @@ EMAIL_PASS = os.environ.get('EMAIL_PASS_BOT')
 # print('EMAIL_USER: ', EMAIL_USER)
 # print('EMAIL_PASS: ', EMAIL_PASS)
 
-# EMAIL_USER_BOT:  pt.ogorek.bot@gmail.com
-# EMAIL_PASS_BOT:  goexkonkkzqbmmlz
 
 #! SMTP
 
