@@ -9,6 +9,9 @@ import time
 
 os.makedirs('xkcd2', exist_ok=True)    # store comics in ./xkcd
 
+# ? hilg;iu
+# hilg;iu
+
 
 def downloadXkcd(startComic, endComic):
     for urlNumber in range(startComic, endComic):
