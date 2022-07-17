@@ -1,0 +1,15 @@
+body {
+	font-size: 40px;
+	background: white url("images/background.png");
+	color: yellow;
+}
+
+a,
+a:link,
+a:visited {
+	color: yellow;
+}
+
+a:hover {
+	color: white;
+}
