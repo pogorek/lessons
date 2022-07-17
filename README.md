@@ -1,20 +1,20 @@
 # school
 [Python](https://github.com/pogorek/school/edit/main/README.md#python)  
----- [Algorithms]()  
--------- [kodolamacz - Python Tutorial]()  
--------- [MITx-6.00.1x - Introduction to Computer Science and Programming Using Python ]()  
--------- [MITx-6.00.2x - Introduction to Computational Thinking and Data Science]()  
+---- [Algorithms](https://github.com/pogorek/school/edit/main/README.md#algorithms)  
+-------- [kodolamacz - Python Tutorial](https://github.com/pogorek/school/edit/main/README.md#kodolamacz)  
+-------- [MITx-6.00.1x - Introduction to Computer Science and Programming Using Python ](https://github.com/pogorek/school/edit/main/README.md#mitx-6001x---introduction-to-computer-science-and-programming-using-python)  
+-------- [MITx-6.00.2x - Introduction to Computational Thinking and Data Science](https://github.com/pogorek/school/edit/main/README.md#mitx-6002x---introduction-to-computational-thinking-and-data-science)  
 
----- [General]()  
+---- [General](https://github.com/pogorek/school/edit/main/README.md#general)  
 -------- [Al Sweigart - Automate the Boring Stuff with Python](https://github.com/pogorek/school/edit/main/README.md#al-sweigart---automate-the-boring-stuff-with-python)  
 -------- [w3schools - Python Tutorial](https://github.com/pogorek/school/edit/main/README.md#w3schools)  
 
----- [Django]()  
--------- [Codemy - Create A Simple Blog With Python and Django]()  
--------- [djangoproject]()  
+---- [Django](https://github.com/pogorek/school/edit/main/README.md#django)  
+-------- [Codemy - Create A Simple Blog With Python and Django](https://github.com/pogorek/school/edit/main/README.md#codemy---create-a-simple-blog-with-python-and-django)  
+-------- [djangoproject](https://github.com/pogorek/school/edit/main/README.md#djangoproject---writing-your-first-django-app)  
 
 ---- [Django + js](https://github.com/pogorek/school/edit/main/README.md#django--js)  
--------- [Harvard Online - CS50’s Web Programming with Python and JavaScript]()  
+-------- [Harvard Online - CS50’s Web Programming with Python and JavaScript](https://github.com/pogorek/school/edit/main/README.md#harvard-online---cs50s-web-programming-with-python-and-javascript)  
 -------- [Pylane - Social Network](https://github.com/pogorek/school/edit/main/README.md#pylane---social-network)  
 
 
