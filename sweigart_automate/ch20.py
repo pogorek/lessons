@@ -191,3 +191,51 @@ import pyautogui, time
 # fw.close() # This will close the window you're typing in.
 
 
+#! Controlling the Keyboard
+
+## Sending a String from the Keyboard
+
+# time.sleep(5)
+# pyautogui.click(100, 200)
+# pyautogui.write('Hello, world!') # Type the full string instantly.
+# pyautogui.write('Hello, world!', interval=0.25) # interval - integer or float value of the number of seconds to pause.
+
+
+## Key Names
+
+# pyautogui.write(['a', 'b', 'left', 'left', 'X', 'Y'])
+
+## Pressing and Releasing the Keyboard
+
+# time.sleep(5)
+# pyautogui.click(100, 200)
+# pyautogui.keyDown('shift'); pyautogui.press('4'); pyautogui.keyUp('shift')
+
+## Hotkey Combinations
+
+# pyautogui.hotkey('ctrl', 'c')
+# pyautogui.hotkey('ctrl', 'v')
+
+
+## sleep() and countdown() functions
+
+# import pyautogui
+# pyautogui.sleep(3) # Pauses the program for 3 seconds.
+# pyautogui.countdown(10) # Counts down over 10 seconds.
+# # 10 9 8 7 6 5 4 3 2 1
+# print('Starting in ', end=''); pyautogui.countdown(3)
+# # Starting in 3 2 1
+
+#! Project: Automatic Form Filler
+
+## Displaying Message Boxes
+
+import pyautogui
+pyautogui.alert('This is a message.', 'Important')
+# 'OK'
+pyautogui.confirm('Do you want to continue?') # Click Cancel
+# 'Cancel'
+pyautogui.prompt("What is your cat's name?")
+# 'Zophie'
+pyautogui.password('What is the password?')
+# 'hunter2'
