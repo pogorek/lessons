@@ -103,7 +103,7 @@ Throughout this tutorial, we’ll walk you through the creation of a basic poll 
 
 ### Django + js
 #### Harvard Online - CS50’s Web Programming with Python and JavaScript
-https://cs50.harvard.edu/web/2020/
+https://cs50.harvard.edu/web/2020/  
 07.01.22 - 18.03.22
 
 This course picks up where CS50 leaves off, diving more deeply into the design and implementation of web apps with Python, JavaScript, and SQL using frameworks like Django, React, and Bootstrap.
