@@ -1,20 +1,59 @@
 # school
 [Python](https://github.com/pogorek/school/edit/main/README.md#python)  
----- [Al Sweigart - Automate the Boring Stuff with Python](https://github.com/pogorek/school/edit/main/README.md#al-sweigart---automate-the-boring-stuff-with-python)  
+---- [Algorithms]()
+-------- [kodolamacz - Python Tutorial]()
+-------- [MITx-6.00.1x - Introduction to Computer Science and Programming Using Python ]()
+-------- [MITx-6.00.2x - Introduction to Computational Thinking and Data Science]()
+
+---- [General]()
+-------- [Al Sweigart - Automate the Boring Stuff with Python](https://github.com/pogorek/school/edit/main/README.md#al-sweigart---automate-the-boring-stuff-with-python)  
+-------- [w3schools - Python Tutorial](https://github.com/pogorek/school/edit/main/README.md#w3schools)
+
+---- [Django]()
+-------- [Codemy - Create A Simple Blog With Python and Django]()
+-------- [djangoproject]()
+
 ---- [Django + js](https://github.com/pogorek/school/edit/main/README.md#django--js)  
+-------- [Harvard Online - CS50’s Web Programming with Python and JavaScript]()  
 -------- [Pylane - Social Network](https://github.com/pogorek/school/edit/main/README.md#pylane---social-network)  
+
+
 ---- [Email](https://github.com/pogorek/school/edit/main/README.md#email)  
 -------- [Corey Schafer - How to Send Emails Using Python](https://github.com/pogorek/school/edit/main/README.md#corey-schafer---how-to-send-emails-using-python---plain-text-adding-attachments-html-emails-and-more)  
 -------- [PythonCode - How to Use Gmail API in Python](https://github.com/pogorek/school/edit/main/README.md#pythoncode---how-to-use-gmail-api-in-python)  
--------- [RealPython - Sending Emails With Python](https://github.com/pogorek/school/edit/main/README.md#realpython---sending-emails-with-python)  
----- [w3schools](https://github.com/pogorek/school/edit/main/README.md#w3schools)
+-------- [RealPython - Sending Emails With Python](https://github.com/pogorek/school/edit/main/README.md#realpython---sending-emails-with-python)
+
+
 
 [JS](https://github.com/pogorek/school/edit/main/README.md#js)  
 ---- [Async JS](https://github.com/pogorek/school/edit/main/README.md#async-js)
 
 
 ## PYTHON
-### Al Sweigart - Automate the Boring Stuff with Python  
+### Algorithms
+
+#### kodolamacz
+https://www.kodolamacz.pl/blog/wyzwanie-python-1-instalacja-srodowiska-i-pierwsze-kroki/  
+03.01.22 - 15.01.22
+
+- https://kodolamacz.pl/blog/wyzwanie-python-1-hello-world/
+- https://kodolamacz.pl/blog/wyzwanie-python-2-podstawowe-instrukcje/
+- https://kodolamacz.pl/blog/wyzwanie-python-3-algorytmy-i-struktury-danych/
+- https://kodolamacz.pl/blog/wyzwanie-python-4-programowanie-obiektowe/
+- https://kodolamacz.pl/blog/wyzwanie-python-5-zaawansowane-aspekty-programowania-obiektowego/
+- https://kodolamacz.pl/blog/wyzwanie-python-6-wyj%C4%85tki-oraz-operacje-na-plikach/
+- https://kodolamacz.pl/blog/wyzwanie-python-7-web-scraping/
+
+
+#### MITx-6.00.1x - Introduction to Computer Science and Programming Using Python  
+https://learning.edx.org/course/course-v1:MITx+6.00.1x+2T2018/home
+29.01.22 - 18.04.22
+
+
+#### MITx-6.00.2x - Introduction to Computational Thinking and Data Science
+
+### General
+#### Al Sweigart - Automate the Boring Stuff with Python  
 https://automatetheboringstuff.com/#toc  
 18.04.22 - 17.07.22
 
@@ -42,7 +81,44 @@ Appendix A – Installing Third-Party Modules
 Appendix B – Running Programs  
 Appendix C – Answers to the Practice Questions  
 
+#### w3schools  
+https://www.w3schools.com/python/default.asp  
+11.02.22 - still
+
+Python Tutorial
+
+### Django
+#### Codemy - Create A Simple Blog With Python and Django
+https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&ab_channel=Codemy.com  
+17.01.22 - 24.01.22
+
+How to Build a Simple Blog with Python and Django. Creating a blog with Django his pretty easy! In this video series I'll walk you through it step by step.
+
+
+#### djangoproject - Writing your first Django app
+https://docs.djangoproject.com/en/4.0/intro/tutorial01/  
+24.01.22 - 27.01.22
+
+Throughout this tutorial, we’ll walk you through the creation of a basic poll application.
+
 ### Django + js
+#### Harvard Online - CS50’s Web Programming with Python and JavaScript
+https://cs50.harvard.edu/web/2020/
+07.01.22 - 18.03.22
+
+This course picks up where CS50 leaves off, diving more deeply into the design and implementation of web apps with Python, JavaScript, and SQL using frameworks like Django, React, and Bootstrap.
+
+HTML, CSS
+Git
+Python
+Django
+SQL, Models, and Migrations
+JavaScript
+User Interfaces
+Testing, CI/CD
+Scalability and Security
+
+
 #### Pylane - Social Network
 https://www.youtube.com/playlist?list=PLgjw1dR712joFJvX_WKIuglbR1SNCeno1
 https://www.youtube.com/watch?v=_77F040kwbE&list=PLgjw1dR712jpcMynnYIQQJ8qBgk5cy9AZ&ab_channel=Pyplane  
@@ -74,12 +150,6 @@ In this tutorial you’ll learn how to:
 - Send multiple personalized emails using a CSV file with contact data
 - Use the Yagmail package to send email through your Gmail account using only a few lines of code
 
-
-### w3schools  
-https://www.w3schools.com/python/default.asp  
-11.02.22 - still
-
-Python Tutorial
 
 ## JS
 ### Async JS
