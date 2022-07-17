@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}
+    test profile
+{% endblock title %}
+{% block content %}
+    <p>
+        <b>profile: </b>{{ profile }}
+    </p>
+    <p>
+        <b>profile.get_my_posts: </b>{{ profile.get_my_posts }}
+    </p>
+    <p>
+        <b>profile.num_posts: </b>{{ profile.num_posts }}
+    </p>
+    <p>
+        <b>profile.get_following: </b>{{ profile.get_following }}
+    </p>
+    <p>
+        <b>profile.get_following_users: </b>{{ profile.get_following_users }}
+    </p>
+    <p>
+        <b>profile.following_count: </b>{{ profile.following_count }}
+    </p>
+    <p>
+        <b>profile.get_my_and_following_posts: </b>{{ profile.get_my_and_following_posts }}
+    </p>
+    <p>
+        <b>profile.get_proposals_for_following: </b>{{ profile.get_proposals_for_following }}
+    </p>
+    <p>
+        <b>profile.get_followers: </b>{{ profile.get_followers }}
+    </p>
+    <p>
+        <b>profile.followers_count: </b>{{ profile.followers_count }}
+    </p>
+{% endblock content %}
