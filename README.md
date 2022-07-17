@@ -1,17 +1,17 @@
 # school
 [Python](https://github.com/pogorek/school/edit/main/README.md#python)  
----- [Algorithms]()
--------- [kodolamacz - Python Tutorial]()
--------- [MITx-6.00.1x - Introduction to Computer Science and Programming Using Python ]()
--------- [MITx-6.00.2x - Introduction to Computational Thinking and Data Science]()
+---- [Algorithms]()  
+-------- [kodolamacz - Python Tutorial]()  
+-------- [MITx-6.00.1x - Introduction to Computer Science and Programming Using Python ]()  
+-------- [MITx-6.00.2x - Introduction to Computational Thinking and Data Science]()  
 
----- [General]()
+---- [General]()  
 -------- [Al Sweigart - Automate the Boring Stuff with Python](https://github.com/pogorek/school/edit/main/README.md#al-sweigart---automate-the-boring-stuff-with-python)  
--------- [w3schools - Python Tutorial](https://github.com/pogorek/school/edit/main/README.md#w3schools)
+-------- [w3schools - Python Tutorial](https://github.com/pogorek/school/edit/main/README.md#w3schools)  
 
----- [Django]()
--------- [Codemy - Create A Simple Blog With Python and Django]()
--------- [djangoproject]()
+---- [Django]()  
+-------- [Codemy - Create A Simple Blog With Python and Django]()  
+-------- [djangoproject]()  
 
 ---- [Django + js](https://github.com/pogorek/school/edit/main/README.md#django--js)  
 -------- [Harvard Online - CS50’s Web Programming with Python and JavaScript]()  
@@ -108,15 +108,15 @@ https://cs50.harvard.edu/web/2020/
 
 This course picks up where CS50 leaves off, diving more deeply into the design and implementation of web apps with Python, JavaScript, and SQL using frameworks like Django, React, and Bootstrap.
 
-HTML, CSS
-Git
-Python
-Django
-SQL, Models, and Migrations
-JavaScript
-User Interfaces
-Testing, CI/CD
-Scalability and Security
+- HTML, CSS
+- Git
+- Python
+- Django
+- SQL, Models, and Migrations
+- JavaScript
+- User Interfaces
+- Testing, CI/CD
+- Scalability and Security
 
 
 #### Pylane - Social Network
