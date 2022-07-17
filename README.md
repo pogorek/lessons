@@ -1,10 +1,15 @@
 # school
 [Python](https://github.com/pogorek/school/edit/main/README.md#python)  
 ---- [Al Sweigart - Automate the Boring Stuff with Python](https://github.com/pogorek/school/edit/main/README.md#al-sweigart---automate-the-boring-stuff-with-python)  
----- [Django + js]()  
--------- [Pylane - Social Network]()  
----- [Email]()  
----- [w3schools]()
+---- [Django + js](https://github.com/pogorek/school/edit/main/README.md#django--js)  
+-------- [Pylane - Social Network](https://github.com/pogorek/school/edit/main/README.md#pylane---social-network)  
+---- [Email](https://github.com/pogorek/school/edit/main/README.md#email)  
+-------- [Corey Schafer - How to Send Emails Using Python](https://github.com/pogorek/school/edit/main/README.md#corey-schafer---how-to-send-emails-using-python---plain-text-adding-attachments-html-emails-and-more)  
+-------- [PythonCode - How to Use Gmail API in Python](https://github.com/pogorek/school/edit/main/README.md#pythoncode---how-to-use-gmail-api-in-python)  
+-------- [RealPython - Sending Emails With Python](https://github.com/pogorek/school/edit/main/README.md#realpython---sending-emails-with-python)  
+---- [w3schools](https://github.com/pogorek/school/edit/main/README.md#w3schools)
+
+[JS]()
 
 
 ## PYTHON
@@ -74,4 +79,8 @@ https://www.w3schools.com/python/default.asp
 11.02.22 - still
 
 Python Tutorial
+
+## JS
+### Async JS
+
 
