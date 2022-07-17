@@ -46,7 +46,7 @@ https://www.kodolamacz.pl/blog/wyzwanie-python-1-instalacja-srodowiska-i-pierwsz
 
 
 #### MITx-6.00.1x - Introduction to Computer Science and Programming Using Python  
-https://learning.edx.org/course/course-v1:MITx+6.00.1x+2T2018/home
+https://learning.edx.org/course/course-v1:MITx+6.00.1x+2T2018/home  
 29.01.22 - 18.04.22
 
 
