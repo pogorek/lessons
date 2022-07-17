@@ -9,7 +9,8 @@
 -------- [RealPython - Sending Emails With Python](https://github.com/pogorek/school/edit/main/README.md#realpython---sending-emails-with-python)  
 ---- [w3schools](https://github.com/pogorek/school/edit/main/README.md#w3schools)
 
-[JS]()
+[JS](https://github.com/pogorek/school/edit/main/README.md#js)  
+---- [Async JS](https://github.com/pogorek/school/edit/main/README.md#async-js)
 
 
 ## PYTHON
