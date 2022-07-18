@@ -155,3 +155,30 @@ In this tutorial you’ll learn how to:
 ### Async JS
 
 
+--------------------------------------------------
+ADDED:
+
+Python
+---- API
+--------- programiz , freecodecamp - Python Read and Write JSON File
+https://www.programiz.com/python-programming/json  
+https://www.freecodecamp.org/news/python-read-json-file-how-to-load-json-from-a-file-and-parse-dumps/  
+18.07.22
+
+You will learn:
+- Why the JSON format is so important.
+- Its basic structure and data types.
+- How JSON and Python Dictionaries work together in Python.
+- How to work with the Python built-in  json module.
+- How to convert JSON strings to Python objects and vice versa.
+- How to use loads() and dumps()
+- How to indent JSON strings automatically.
+- How to read JSON files in Python using load()
+- How to write to JSON files in Python using dump()
+
+--------- realpython - Working With JSON Data in Python
+https://realpython.com/python-json/  
+18.07.22
+4/10
+
+
